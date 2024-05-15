@@ -114,34 +114,36 @@ The major aim of thie project is to gain insight into the sales data of Walmart 
 
 ## Revenue And Profit Calculations
 
-$ COGS = unitsPrice * quantity $
+COGS = Units Price * quantity 
 
-$ VAT = 5\% * COGS $
+VAT = 5% * COGS 
 
-$VAT$ is added to the $COGS$ and this is what is billed to the customer.
+VAT is added to the COGS and this is what is billed to the customer.
 
-$ total(gross_sales) = VAT + COGS $
+Total (gross_sales) = VAT + COGS 
 
-$ grossProfit(grossIncome) = total(gross_sales) - COGS $
+Gross Profit = Total - COGS 
 
-**Gross Margin** is gross profit expressed in percentage of the total(gross profit/revenue)
+Gross Margin is gross profit expressed in percentage of the total(gross profit/revenue)
 
-$ \text{Gross Margin} = \frac{\text{gross income}}{\text{total revenue}} $
+Gross Margin = gross income / total revenue
 
-<u>**Example with the first row in our DB:**</u>
+Example with the first row in our DB
 
-**Data given:**
+Data given:
 
-- $ \text{Unite Price} = 45.79 $
-- $ \text{Quantity} = 7 $
+Unite Price = 45.79 $
+Quantity = 7 $
+COGS = 45.79 * 7 = 320.53 $
 
-$ COGS = 45.79 * 7 = 320.53 $
+VAT = 5% * COGS = 5% * 320.53 = 16.0265 $
 
-$ \text{VAT} = 5\% * COGS\\= 5\%  320.53 = 16.0265 $
+Total = VAT + COGS = 16.0265 + 320.53 = 336.5565 $
 
-$ total = VAT + COGS\\= 16.0265 + 320.53 = $336.5565$
+Gross Margin Percentage = gross income / total revenue = 16.0265 / 336.5565                  
+                                          = 0.047619 approx
+                                          = 4.7619 % 
 
-$ \text{Gross Margin Percentage} = \frac{\text{gross income}}{\text{total revenue}}\\=\frac{16.0265}{336.5565} = 0.047619\\\approx 4.7619\% $
 
 ## Code
 
